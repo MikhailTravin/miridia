@@ -1352,119 +1352,127 @@ const previewsContainer = document.querySelector('.previews');
 let selectedFiles = [];
 
 // Обработчик клика на область загрузки файлов
-fileInputContainer.addEventListener('click', function(e) {
-    // Инициируем клик по самому input[type="file"]
-    fileInput.click();
+fileInputContainer.addEventListener('click', function (e) {
+  // Инициируем клик по самому input[type="file"]
+  fileInput.click();
 });
 
 // Обработчик изменения выбранных файлов
-fileInput.addEventListener('change', function(e) {
-    const newFiles = Array.from(e.target.files);
-    
-    // Добавляем новые файлы к существующим
-    selectedFiles = [...selectedFiles, ...newFiles];
-    
-    // Обновляем отображение
-    updatePreviews();
-    
-    // Обновляем FileList в input (для совместимости с формами)
-    updateFileInput();
+fileInput.addEventListener('change', function (e) {
+  const newFiles = Array.from(e.target.files);
+
+  // Добавляем новые файлы к существующим
+  selectedFiles = [...selectedFiles, ...newFiles];
+
+  // Обновляем отображение
+  updatePreviews();
+
+  // Обновляем FileList в input (для совместимости с формами)
+  updateFileInput();
 });
 
 // Функция обновления отображения файлов
 function updatePreviews() {
-    // Очищаем превью
-    previewsContainer.innerHTML = '';
-    
-    // Создаем колонку для файлов
-    const previewColumn = document.createElement('div');
-    previewColumn.className = 'previews__column';
-    previewsContainer.appendChild(previewColumn);
-    
-    // Если нет файлов, выходим
-    if (selectedFiles.length === 0) return;
-    
-    // Добавляем каждый файл
-    selectedFiles.forEach((file, index) => {
-        const fileElement = document.createElement('div');
-        fileElement.className = 'preview-item';
-        fileElement.dataset.index = index;
-        
-        // Создаем элемент для имени файла
-        const fileName = document.createElement('span');
-        fileName.className = 'preview-item__name';
-        fileName.textContent = `${file.name} (${formatFileSize(file.size)})`;
-        
-        // Создаем кнопку удаления
-        const deleteBtn = document.createElement('button');
-        deleteBtn.className = 'preview-item__delete';
-        deleteBtn.type = 'button';
-        deleteBtn.innerHTML = '×';
-        deleteBtn.setAttribute('aria-label', 'Удалить файл');
-        
-        // Обработчик удаления файла
-        deleteBtn.addEventListener('click', function(e) {
-            e.stopPropagation();
-            removeFile(index);
-        });
-        
-        // Собираем элемент
-        fileElement.appendChild(fileName);
-        fileElement.appendChild(deleteBtn);
-        previewColumn.appendChild(fileElement);
+  // Очищаем превью
+  previewsContainer.innerHTML = '';
+
+  // Создаем колонку для файлов
+  const previewColumn = document.createElement('div');
+  previewColumn.className = 'previews__column';
+  previewsContainer.appendChild(previewColumn);
+
+  // Если нет файлов, выходим
+  if (selectedFiles.length === 0) return;
+
+  // Добавляем каждый файл
+  selectedFiles.forEach((file, index) => {
+    const fileElement = document.createElement('div');
+    fileElement.className = 'preview-item';
+    fileElement.dataset.index = index;
+
+    // Создаем элемент для имени файла
+    const fileName = document.createElement('span');
+    fileName.className = 'preview-item__name';
+    fileName.textContent = `${file.name} (${formatFileSize(file.size)})`;
+
+    // Создаем кнопку удаления
+    const deleteBtn = document.createElement('button');
+    deleteBtn.className = 'preview-item__delete';
+    deleteBtn.type = 'button';
+    deleteBtn.innerHTML = '×';
+    deleteBtn.setAttribute('aria-label', 'Удалить файл');
+
+    // Обработчик удаления файла
+    deleteBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      removeFile(index);
     });
+
+    // Собираем элемент
+    fileElement.appendChild(fileName);
+    fileElement.appendChild(deleteBtn);
+    previewColumn.appendChild(fileElement);
+  });
 }
 
 function removeFile(index) {
-    selectedFiles.splice(index, 1);
-    
-    updatePreviews();
-    
-    updateFileInput();
+  selectedFiles.splice(index, 1);
+
+  updatePreviews();
+
+  updateFileInput();
 }
 
 function updateFileInput() {
-    const dataTransfer = new DataTransfer();
-    
-    selectedFiles.forEach(file => {
-        dataTransfer.items.add(file);
-    });
-    
-    fileInput.files = dataTransfer.files;
+  const dataTransfer = new DataTransfer();
+
+  selectedFiles.forEach(file => {
+    dataTransfer.items.add(file);
+  });
+
+  fileInput.files = dataTransfer.files;
 }
 
 function formatFileSize(bytes) {
-    if (bytes === 0) return '0 Bytes';
-    
-    const k = 1024;
-    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-    const i = Math.floor(Math.log(bytes) / Math.log(k));
-    
-    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+  if (bytes === 0) return '0 Bytes';
+
+  const k = 1024;
+  const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
 }
 
-fileInputContainer.addEventListener('dragover', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    fileInputContainer.classList.add('dragover');
+fileInputContainer.addEventListener('dragover', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  fileInputContainer.classList.add('dragover');
 });
 
-fileInputContainer.addEventListener('dragleave', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    fileInputContainer.classList.remove('dragover');
+fileInputContainer.addEventListener('dragleave', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  fileInputContainer.classList.remove('dragover');
 });
 
-fileInputContainer.addEventListener('drop', function(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    fileInputContainer.classList.remove('dragover');
-    
-    const files = Array.from(e.dataTransfer.files);
-    
-    selectedFiles = [...selectedFiles, ...files];
-    
-    updatePreviews();
-    
-    updateFileInput();
+fileInputContainer.addEventListener('drop', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+  fileInputContainer.classList.remove('dragover');
+
+  const files = Array.from(e.dataTransfer.files);
+
+  selectedFiles = [...selectedFiles, ...files];
+
+  updatePreviews();
+
+  updateFileInput();
 });
+
+const fixedButton = document.querySelector('.fixed-button');
+
+if (fixedButton) {
+  fixedButton.addEventListener('click', function () {
+    document.documentElement.classList.toggle('fixed-open');
+  });
+}
