@@ -777,7 +777,9 @@ if (document.querySelector('.block-clients__slider')) {
     observer: true,
     observeParents: true,
     slidesPerView: 'auto',
-    spaceBetween: 70,
+    spaceBetween: 70, 
+    loop: true,
+    lazy: true,
     speed: 400,
     navigation: {
       prevEl: '.block-clients-arrow-prev',
@@ -792,6 +794,7 @@ if (document.querySelector('.block-steps__body')) {
     observeParents: true,
     slidesPerView: 2,
     spaceBetween: 0,
+
     autoHeight: false,
     speed: 400,
 
