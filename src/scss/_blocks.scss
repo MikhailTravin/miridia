@@ -68,6 +68,7 @@
     font-family: var(--second-family);
     font-weight: 300;
     font-size: 22px;
+    line-height: 120%;
     text-transform: uppercase;
     @media (max-width: 992px) {
       text-align: center;
@@ -125,6 +126,20 @@
   &__titles {
     display: flex;
     flex-direction: column;
+    span {
+      font-weight: 700;
+      font-size: clamp(44px, 8vw + 24px, 99px);
+      line-height: 100%;
+      text-transform: uppercase;
+      background: linear-gradient(169deg, #f93c3c 0%, #cd0973 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: inset 0 4px 4px 0 rgba(122, 20, 51, 0.25);
+      @media (max-width: 768px) {
+        font-size: clamp(44px, 6vw + 32px, 63px);
+      }
+    }
     img {
       max-width: 360px;
       width: 100%;
@@ -192,7 +207,7 @@
   padding: 60px 0px 50px 0px;
   background: rgba(255, 255, 255, 1);
   @media (max-width: 768px) {
-    padding: 0px 0px 45px 0px;
+    padding: 45px 0px 45px 0px;
   }
   // .block-promo__body
 
@@ -598,9 +613,6 @@
     @media (max-width: 1500px) {
       padding: 0px 30px;
     }
-    @media (max-width: 768px) {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    }
     .arrow-next,
     .arrow-prev {
       @media (max-width: 1500px) {
@@ -800,6 +812,9 @@
       margin: 0px -10px;
       padding: 0px 10px;
       width: calc(100% + 20px);
+    }
+    @media (max-width: 600px) {
+      border-radius: 22px;
     }
   }
 
