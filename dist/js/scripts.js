@@ -777,7 +777,7 @@ if (document.querySelector('.block-clients__slider')) {
     observer: true,
     observeParents: true,
     slidesPerView: 'auto',
-    spaceBetween: 70, 
+    spaceBetween: 70,
     loop: true,
     lazy: true,
     speed: 400,
@@ -844,6 +844,40 @@ if (document.querySelector('.block-steps__body')) {
       },
       1200: {
         slidesPerView: 4.5,
+      },
+    },
+  });
+};
+
+if (document.querySelector('.block-services__slider')) {
+  const swiperServices = new Swiper('.block-services__slider', {
+    observer: true,
+    observeParents: true,
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoHeight: false,
+    speed: 400,
+    navigation: {
+      prevEl: '.block-services-arrow-prev',
+      nextEl: '.block-services-arrow-next',
+    },
+
+    breakpoints: {
+      450: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      650: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      992: {
+        slidesPerView: 5.1,
+        spaceBetween: 10,
+      },
+      1300: {
+        slidesPerView: 7,
+        spaceBetween: 10,
       },
     },
   });
