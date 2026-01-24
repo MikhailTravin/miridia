@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="css/swiper.min.css" />
-		<link rel="stylesheet" href="css/fancybox.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -21,1380 +20,374 @@
 				<div class="container">
 					<div class="header__content">
 						<a href="./" class="header__logo">
-							<img src="img/icon/logo1.svg" alt="" class="logo-desc">
-							<img src="img/icon/logo2.svg" alt="" class="logo-mob">
+							<img src="img/logo.svg" alt="">
 						</a>
-						<div class="header-lang">
-							<div class="header-lang__title">
-								<span>Ru</span>
-								<img src="img/icon/arrow1.svg" alt="" class="header-lang__arrow">
-								<img src="img/icon/flag1.svg" alt="" class="header-lang__flag">
+						<div class="header__right">
+							<div class="header__phone">
+								<div class="header__text">Звонок бесплатный</div>
+								<a href="tel:74991106817">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+										<path d="M13.3 10.094V12.5692C13.3 12.9367 13.0158 13.2416 12.6493 13.2675C12.3431 13.2892 12.0934 13.3 11.9 13.3C5.71433 13.3 0.699951 8.28557 0.699951 2.09995C0.699951 1.90655 0.710766 1.65676 0.732396 1.3506C0.75831 0.984067 1.06321 0.699951 1.43065 0.699951H3.90602C4.0857 0.699951 4.23618 0.836045 4.25422 1.01481C4.27042 1.1753 4.28548 1.30415 4.2994 1.40137C4.441 2.39026 4.73022 3.3315 5.14404 4.20207C5.21046 4.34181 5.16715 4.50906 5.04125 4.59899L3.53044 5.67821C4.45022 7.82672 6.17318 9.5497 8.32169 10.4695L9.39892 8.96128C9.48999 8.83388 9.65925 8.79006 9.80065 8.85719C10.6712 9.27068 11.6123 9.55957 12.6011 9.70083C12.6977 9.71469 12.8257 9.7296 12.9851 9.7457C13.1639 9.76376 13.3 9.91426 13.3 10.094Z" fill="#f43939"></path>
+									</svg>
+									<span>+7 (499) 110-68-17</span>
+								</a>
 							</div>
-							<ul>
-								<li>
-									<a href="./">
-										<span>En</span>
-										<img src="img/icon/flag2.svg" alt="" class="header-lang__flag">
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="header__menu">
-							<ul>
-								<li>
-									<a href="./" data-goto-header data-goto=".block-intro">КТО МЫ?</a>
-								</li>
-								<li>
-									<a href="./" data-goto-header data-goto=".block-services">Наши УСЛУГИ</a>
-								</li>
-								<li>
-									<a href="./" data-goto-header data-goto="">Партнерство</a>
-								</li>
-								<li>
-									<a href="./" data-goto-header data-goto=".block-works">ПОРТФОЛИО</a>
-								</li>
-							</ul>
-						</div>
-						<a href="tel:79037771959" class="phone">
-							<img src="img/icon/phone.svg" alt="">
-							<span>+7 (903) 777-19-59</span>
-						</a>
-						<div class="header__icon">
-							<div class="icon-menu">
-								<span></span>
-							</div>
+							<a href="./" data-popup="#call" class="btn">Заказать звонок</a>
 						</div>
 					</div>
 				</div>
 			</header>
 			<main class="main">
 
-				<section class="block-intro section">
+				<section class="block-intro">
+					<video width="100%" height="100%" id="video" autoplay loop muted playsinline>
+						<source src="files/videos/video.mp4" type="video/mp4">
+					</video>
 					<div class="container">
 						<div class="block-intro__content">
-							<div class="block-intro__slider swiper">
-								<div class="block-intro__wrapper swiper-wrapper">
-									<div class="block-intro__slide swiper-slide">
-										<div class="block-intro__item">
-											<div class="block-intro__name">Современная дизайн студия</div>
-											<div class="block-intro__center">
-												<div class="block-intro__titles">
-													<div class="block-intro__title">We love</div>
-													<span>Design</span>
-												</div>
-												<ul>
-													<li>Создание сайтов <span>/</span></li>
-													<li>Интерфейсов <span>/</span></li>
-													<li>Продвижение</li>
-												</ul>
-											</div>
-											<a href="./" class="link">
-												<span>Узнать больше</span>
-												<img src="img/icon/arrow3.svg" alt="">
-											</a>
-										</div>
-										<div class="block-intro__pic">
-											<img src="img/image1.webp" alt="">
-										</div>
-									</div>
-									<div class="block-intro__slide swiper-slide">
-										<div class="block-intro__item">
-											<div class="block-intro__name">Современная дизайн студия2</div>
-											<div class="block-intro__center">
-												<div class="block-intro__titles">
-													<div class="block-intro__title">We love</div>
-													<span>CREATE</span>
-												</div>
-												<ul>
-													<li>Создание сайтов <span>/</span></li>
-													<li>Интерфейсов <span>/</span></li>
-													<li>Продвижение</li>
-												</ul>
-											</div>
-											<a href="./" class="link">
-												<span>Узнать больше</span>
-												<img src="img/icon/arrow3.svg" alt="">
-											</a>
-										</div>
-										<div class="block-intro__pic">
-											<img src="img/image1.webp" alt="">
-										</div>
-									</div>
-									<div class="block-intro__slide swiper-slide">
-										<div class="block-intro__item">
-											<div class="block-intro__name">Современная дизайн студия2</div>
-											<div class="block-intro__center">
-												<div class="block-intro__titles">
-													<div class="block-intro__title">We love</div>
-													<span>DEVELOP</span>
-												</div>
-												<ul>
-													<li>Создание сайтов <span>/</span></li>
-													<li>Интерфейсов <span>/</span></li>
-													<li>Продвижение</li>
-												</ul>
-											</div>
-											<a href="./" class="link">
-												<span>Узнать больше</span>
-												<img src="img/icon/arrow3.svg" alt="">
-											</a>
-										</div>
-										<div class="block-intro__pic">
-											<img src="img/image1.webp" alt="">
-										</div>
-									</div>
-								</div>
+							<h1 class="title1">
+								<span>Лучшие тракторы с завода для вас</span>
+								<br>
+								за разумные деньги
+							</h1>
+							<div class="block-intro__subtitle">
+								пройдите тест, и мы пришлем персональную подборку
 							</div>
-							<div class="arrow-prev block-intro-arrow-prev">
-								<img src="img/icon/arrow1.svg" alt="">
-							</div>
-							<div class="arrow-next block-intro-arrow-next">
-								<img src="img/icon/arrow1.svg" alt="">
-							</div>
-							<div class="slider-nav">
-								<div class="slider-nav__pagination-fraction block-intro-pagination-fraction">
-									<span class="swiper-pagination-current">2</span>
-									|
-									<span class="swiper-pagination-total">4</span>
-								</div>
-								<div class="slider-nav__pagination block-intro-pagination"></div>
-							</div>
+							<a href="./" class="btn choose-btn">Подобрать трактор</a>
 						</div>
-					</div>
-				</section>
-
-				<section class="block-services section">
-					<div class="container">
-						<h2 class="title2">Мы можем предложить</h2>
-						<div class="block-services__content">
-							<div class="block-services__slider swiper">
-								<div class="block-services__wrapper swiper-wrapper">
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon1.svg" alt="">
-												</div>
-												<p>
-													Разработка<br>
-													логотипов
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon2.svg" alt="">
-												</div>
-												<p>
-													Разработка<br>
-													сайтов
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon3.svg" alt="">
-												</div>
-												<p>
-													Разработка<br>
-													landing page
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon4.svg" alt="">
-												</div>
-												<p>
-													Разработка<br>
-													интернет-магазина
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon5.svg" alt="">
-												</div>
-												<p>
-													Дизайн<br>
-													сайтов
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon6.svg" alt="">
-												</div>
-												<p>
-													Веб-<br>
-													программирование
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon7.svg" alt="">
-												</div>
-												<p>
-													Мобильные
-													<br>
-													приложения
-												</p>
-											</div>
-										</a>
-									</div>
-									<div class="block-services__slide swiper-slide">
-										<a href="./" class="cards__column">
-											<div class="cards__item">
-												<div class="cards__icon">
-													<img loading="lazy" src="img/icon/icon7.svg" alt="">
-												</div>
-												<p>
-													Мобильные
-													<br>
-													приложения
-												</p>
-											</div>
-										</a>
-									</div>
-								</div>
+						<div class="block-quiz">
+							<div class="block-quiz__back">
+								<svg data-v-e60a6411="" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M8.26402 5.70385C8.56565 5.98774 8.58004 6.4624 8.29615 6.76403L5.48582 9.75H16.25C16.6642 9.75 17 10.0858 17 10.5C17 10.9142 16.6642 11.25 16.25 11.25H5.48582L8.29615 14.236C8.58004 14.5376 8.56565 15.0123 8.26402 15.2962C7.96239 15.58 7.48774 15.5657 7.20385 15.264L3.20385 11.014C2.93205 10.7252 2.93205 10.2748 3.20385 9.98598L7.20385 5.73598C7.48774 5.43435 7.96239 5.41996 8.26402 5.70385Z" fill="white"></path>
+								</svg>
+								<span>Назад</span>
 							</div>
-							<div class="arrow-prev block-services-arrow-prev">
-								<img src="img/icon/arrow1.svg" alt="">
-							</div>
-							<div class="arrow-next block-services-arrow-next">
-								<img src="img/icon/arrow1.svg" alt="">
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-services block-services--other section">
-					<div class="container">
-						<div class="block-services__content">
-							<h2 class="title2">Дополнительные услуги</h2>
-							<div class="cards cards--transparent">
-								<a href="./" class="cards__column">
-									<div class="cards__item">
-										<div class="cards__icon">
-											<img loading="lazy" src="img/icon/icon8.svg" alt="">
-										</div>
-										<p>
-											Доработка
-											<br>
-											сайтов
-										</p>
-									</div>
-								</a>
-								<a href="./" class="cards__column">
-									<div class="cards__item">
-										<div class="cards__icon">
-											<img loading="lazy" src="img/icon/icon9.svg" alt="">
-										</div>
-										<p>
-											Поддержка
-											<br>
-											сайтов
-										</p>
-									</div>
-								</a>
-								<a href="./" class="cards__column">
-									<div class="cards__item">
-										<div class="cards__icon">
-											<img loading="lazy" src="img/icon/icon10.svg" alt="">
-										</div>
-										<p>
-											Продвижение
-											<br>
-											сайтов
-										</p>
-									</div>
-								</a>
-								<a href="./" class="cards__column">
-									<div class="cards__item">
-										<div class="cards__icon">
-											<img loading="lazy" src="img/icon/icon11.svg" alt="">
-										</div>
-										<p>
-											Контекстная
-											<br>
-											реклама
-										</p>
-									</div>
-								</a>
-								<a href="./" class="cards__column">
-									<div class="cards__item">
-										<div class="cards__icon">
-											<img loading="lazy" src="img/icon/icon12.svg" alt="">
-										</div>
-										<p>
-											Хостинг
-											<br>
-											и домен
-										</p>
-									</div>
-								</a>
-								<a href="./" class="cards__column">
-									<div class="cards__item">
-										<div class="cards__icon">
-											<img loading="lazy" src="img/icon/icon13.svg" alt="">
-										</div>
-										<p>
-											Наполнение
-											<br>
-											сайтов
-										</p>
-									</div>
-								</a>
-								<a href="./" class="cards__column">
-									<div class="cards__item">
-										<div class="cards__icon">
-											<img loading="lazy" src="img/icon/icon14.svg" alt="">
-										</div>
-										<p>
-											Верстка
-											<br>
-											сайтов
-										</p>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-promo section">
-					<div class="container">
-						<div class="heading-complex">
-							<div class="heading-complex__left">
-								<h2 class="title2">
-									У ВАС ДРУГАЯ ЗАДАЧА?
-								</h2>
-								<a href="./" data-popup="#write-us" data-da=".block-promo__descr, 1200, 1" class="btn btn--primary">
-									<span>РАССКАЖИТЕ О НЕЙ</span>
-								</a>
-							</div>
-							<p data-da=".block-promo__descr, 1200, 2" class="text">
-								В веб-разработке и дизайне предоставляем исчерпывающий перечень услуг.
-								Опишите свою задачу прямо сейчас и получите консультацию эксперта
-							</p>
-						</div>
-						<div class="block-promo__body">
-							<div class="block-promo__descr">
-								<div class="block-promo__text">
-									<p>
-										Любой бизнес должен быть представлен в интернете. Разработка сайта – это лучшее
-										вложение
-										в развитие компании и от его реализации напрямую зависит успешность проекта. Но
-										почему
-										одни сайты «пылятся» в сети, а другие стабильно генерируют поток клиентов? Ответ
-										прост:
-										их отдача напрямую зависит от квалификации разработчиков, дизайнеров и специалистов
-										по
-										вёрстке.
-									</p>
-									<p>
-										Чтобы создавать не просто красивые, но и эффективные сайты, необходимо регулярно
-										отслеживать современные тренды, проводить сплит-тестирования и уметь изучать рынок с
-										целевой аудиторией. Именно поэтому мы не просто делаем сайты, а создаём проверенные
-										бизнес-решения. И сотни довольных клиентов – лучшее подтверждение нашей
-										компетентности.
-									</p>
-									<p>
-										Обращаясь в студию MIRIDEA, вы можете заказать не только разработку проекта с нуля,
-										но и
-										подключить нас на любом этапе создания сайта: программирование, отрисовка дизайна,
-										создание логотипов, вёрстка и многое другое.
-									</p>
-								</div>
-								<div class="block-promo__request">
-									<div class="block-promo__icon">
-										<img loading="lazy" src="img/icon/phone2.svg" alt="">
-									</div>
-									<div class="block-promo__item">
-										<a data-popup="#write-us" data-da=".block-promo__icon, 600, last" href="./" class="block-promo__btn btn"><span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span></a>
-										<p>
-											Свяжитесь с нами прямо сейчас и получите бесплатную консультацию ведущего
-											эксперта MIRIDEA. У нас нет менеджера, поэтому вы обсудите проект именно с тем
-											специалистом, который займётся вашим проектом.
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="block-promo__image">
-								<img loading="lazy" src="img/image2.webp" alt="">
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-features section">
-					<img loading="lazy" src="img/bg3.webp" alt="" class="block-features__bg1">
-					<div class="container">
-						<div class="heading-complex">
-							<div class="heading-complex__left">
-								<h2 class="title2 title2--white">
-									5 ПРИЧИН РАБОТАТЬ С НАМИ
-								</h2>
-							</div>
-							<p>
-								Как и в других студиях, вы получите индивидуальный подход и оперативную обратную связь.<br>
-								Но это не те преимущества, которые выделяют нас среди конкурентов:
-							</p>
-						</div>
-						<div class="block-features__body">
-							<div class="block-features__column">
-								<div class="block-features__number">
-									<span>1</span>
-									<img loading="lazy" src="img/icon/arrow4.svg" alt="">
-								</div>
-								<p>
-									Программирование
-									<br>
-									на разных движках.
-								</p>
-							</div>
-							<div class="block-features__column">
-								<div class="block-features__number">
-									<span>2</span>
-									<img loading="lazy" src="img/icon/arrow4.svg" alt="">
-								</div>
-								<p>
-									Кроссбраузерная вёрстка
-									<br>
-									и мобильная адаптация
-								</p>
-							</div>
-							<div class="block-features__column">
-								<div class="block-features__number">
-									<span>3</span>
-									<img loading="lazy" src="img/icon/arrow4.svg" alt="">
-								</div>
-								<p>
-									Возможность разработки
-									<br>
-									эксклюзивного функционала
-								</p>
-							</div>
-							<div class="block-features__column">
-								<div class="block-features__number">
-									<span>4</span>
-									<img loading="lazy" src="img/icon/arrow4.svg" alt="">
-								</div>
-								<p>
-									Внедряем передовые тренды
-									<br>
-									для максимальной конверсии
-								</p>
-							</div>
-							<div class="block-features__column">
-								<div class="block-features__number">
-									<span>5</span>
-								</div>
-								<p>
-									Услуги «под ключ»: от идеи,<br>
-									до запуска и поддержки проекта
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-works section">
-					<div class="container">
-						<div class="heading-complex">
-							<div class="heading-complex__left">
-								<h2 class="title2">
-									Наши работы
-								</h2>
-							</div>
-							<p>
-								Мы работаем со многими компаниями и ближнего зарубежья. В нашем портфеле более 30 успешных
-								кейсов.<br> Убедиться в качественном результате Вы можете сами начав с нами сотрудничать,
-								для
-								этого нужно
-							</p>
-						</div>
-						<div class="block-works__content">
-							<div class="block-works__body">
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image1.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image2.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image3.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image4.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image5.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image6.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image7.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image8.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image9.webp" alt="">
-								</a>
-								<a href="./" class="block-works__column">
-									<img loading="lazy" src="img/works/image10.webp" alt="">
-								</a>
-							</div>
-							<a href="./" class="btn btn--primary">
-								<span>Посмотреть все</span>
-							</a>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-stats section">
-					<div class="block-stats__content">
-						<img loading="lazy" src="img/bg4.webp" alt="" class="block-stats__bg1">
-						<div class="container">
-							<h2 class="title2 title2--white">СТУДИЯ MIRIDEA
-								В ЦИФРАХ</h2>
-							<div class="cards cards--transparent">
-								<div class="cards__column">
-									<div class="cards__item">
-										<p>
-											Разрабатываем
-											сайты
-											<span>с 2006 года.</span>
-										</p>
-									</div>
-								</div>
-								<div class="cards__column">
-									<div class="cards__item">
-										<p>
-											<span>4 из 10</span>
-											клиентов
-											приходят по
-											рекомендации.
-										</p>
-									</div>
-								</div>
-								<div class="cards__column">
-									<div class="cards__item">
-										<p>
-											<span>ТОП 10 </span>
-											специализации
-											«Сайты под ключ»
-											в России и СНГ по
-											версии FL.ru.
-										</p>
-									</div>
-								</div>
-								<div class="cards__column">
-									<div class="cards__item">
-										<p>
-											100%
-											<span>положительных</span>
-											отзывов.
-										</p>
-									</div>
-								</div>
-								<div class="cards__column">
-									<div class="cards__item">
-										<p>
-											Завершено
-											<span>более 5 тыс.</span>
-											проектов.
-										</p>
-									</div>
-								</div>
-								<div class="cards__column">
-									<div class="cards__item">
-										<p>
-											Цена почти
-											<span>на 20% ниже</span>
-											среднерыночной.
-										</p>
-									</div>
-								</div>
-								<div class="cards__column">
-									<div class="cards__item">
-										<p>
-											<span>100%
-												гарантия</span>
-											качества работы.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-clients section">
-					<div class="container">
-						<h2 class="title2">НАШИ КЛИЕНТЫ</h2>
-						<div class="block-clients__content">
-							<div class="block-clients__slider swiper">
-								<div class="block-clients__wrapper swiper-wrapper">
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image1.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image2.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image3.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image4.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image5.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image6.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image7.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image8.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image1.webp" alt="">
-									</div>
-									<div class="block-clients__slide swiper-slide">
-										<img loading="lazy" src="img/clients/image1.webp" alt="">
-									</div>
-								</div>
-							</div>
-							<div class="arrow-prev block-clients-arrow-prev">
-								<img src="img/icon/arrow1.svg" alt="">
-							</div>
-							<div class="arrow-next block-clients-arrow-next">
-								<img src="img/icon/arrow1.svg" alt="">
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-steps section">
-					<div class="container">
-						<div class="block-steps__content">
-							<h2 class="title2">
-								ЭТАПЫ РАЗРАБОТКИ САЙТА С MIRIDEA
-							</h2>
-							<div class="block-steps__body">
-								<div class="block-steps__slider-thumbs">
-									<div class="block-steps__thumbs swiper">
-										<div class="block-steps__wrapper swiper-wrapper">
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>1</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>2</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>3</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>4</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>5</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>6</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>7</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>8</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>9</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-											<div class="block-steps__thumb swiper-slide">
-												<div class="block-steps__number">
-													<span>10</span>
-												</div>
-												<div class="block-steps__line"></div>
-											</div>
-										</div>
-									</div>
-									<div data-da=".block-steps__sliders, 600, last" class="arrow-prev block-steps-arrow-prev">
-										<img src="img/icon/arrow1.svg" alt="">
-									</div>
-									<div data-da=".block-steps__sliders, 600, last" class="arrow-next block-steps-arrow-next">
-										<img src="img/icon/arrow1.svg" alt="">
-									</div>
-								</div>
-								<div class="block-steps__sliders">
-									<div class="block-steps__slider swiper">
-										<div class="block-steps__wrapper swiper-wrapper">
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon23.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Обсуждаем проект<br>
-															и его цели
-														</p>
-														<p>
-															Заполняем бриф<br>
-															Составляем техзадание
-														</p>
-														<p>
-															От качества проработки
-															этого
-															этапа зависят все
-															дальнейшие шаги и скорость
-															запуска
-															вашего проекта
-														</p>
+							<div class="block-quiz__content">
+								<div class="block-quiz__slider swiper">
+									<div class="block-quiz__wrapper swiper-wrapper">
+										<div class="block-quiz__slide swiper-slide">
+											<div class="block-quiz__item">
+												<div class="block-quiz__title">Для каких работ нужен трактор?</div>
+												<div class="block-quiz__answers">
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">Снегоуборочные работы</div>
 													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon24.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Анализируем рынок
-															конкурентов
-															<br>
-															Разрабатываем структуру
-															будущего проекта и прототипы
-															основных страниц
-														</p>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">Сельскохозяйственные работы</div>
 													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon25.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Рисуем уникальный дизайн
-															главной и остальных страниц
-															сайта. Продумываем юзабили
-															и удобство пользовательского
-															интерфейса
-														</p>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">Дорожно-строительные работы</div>
 													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon26.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Верстаем утвержденные
-															страницы и подключаем CMS
-															для удобного редактирования
-															контента
-														</p>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">Коммунальные работы</div>
 													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon27.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Тестируем получившийся
-															продукт
-														</p>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">Садовые работы</div>
 													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon28.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Выкладываем сайт
-															на ваш домен и публикуем
-															в интернете
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon29.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Сопровождаем проект
-															в течение всего срока
-															службы работы сайта
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon30.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Продвигаем и регистрируем
-															сайт в поисковых
-															системах
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="block-steps__slide swiper-slide">
-												<div class="block-steps__item">
-													<img loading="lazy" src="img/icon/icon31.svg" alt="">
-													<div class="block-steps__text">
-														<p>
-															Оказываем любые
-															консультационные услуги
-															по поддержке
-															в работе сайта
-														</p>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">Универсальные работы</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-								</div>
-							</div>
-							<div class="heading-complex">
-								<div class="heading-complex__left">
-									<a href="./" data-popup="#write-us" data-popup="#write-us" class="btn btn--primary">
-										<span>Расскажите о вашем проекте</span>
-									</a>
-								</div>
-								<p>
-									Для вашего удобства мы предусмотрели поэтапную систему оплаты.
-									<br>
-									Вы можете рассчитать примерную стоимость прямо сейчас, воспользовавшись нашим
-									калькулятором.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-benefits section">
-					<div class="container">
-						<h2 class="title2">
-							ОТЛИЧИТЕЛЬНЫЕ ПРЕИМУЩЕСТВА САЙТОВ ОТ MIRIDEA
-						</h2>
-						<div class="cards cards--transparent">
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon15.svg" alt="">
-									</div>
-									<p>
-										Удобная админ-панель<br>
-										для управления сайтом
-									</p>
-								</div>
-							</div>
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon16.svg" alt="">
-									</div>
-									<p>
-										Подстройка под<br>
-										SEO продвижение
-									</p>
-								</div>
-							</div>
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon17.svg" alt="">
-									</div>
-									<p>
-										Бренд-дизайн<br>
-										с фирменным стилем
-									</p>
-								</div>
-							</div>
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon18.svg" alt="">
-									</div>
-									<p>
-										Разработка<br>
-										продающих прототипов
-									</p>
-								</div>
-							</div>
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon19.svg" alt="">
-									</div>
-									<p>
-										Вёрстка под<br>
-										все устройства
-									</p>
-								</div>
-							</div>
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon20.svg" alt="">
-									</div>
-									<p>
-										Работаем с любыми<br>
-										движками, в том числе<br>
-										самописными
-									</p>
-								</div>
-							</div>
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon21.svg" alt="">
-									</div>
-									<p>
-										Сложное<br>
-										программирование<br>
-										для крупных проектов
-									</p>
-								</div>
-							</div>
-							<div class="cards__column">
-								<div class="cards__item">
-									<div class="cards__icon">
-										<img loading="lazy" src="img/icon/icon22.svg" alt="">
-									</div>
-									<p>
-										Соответствие прогрессивным<br>
-										трендам мира дизайна<br>
-										и веб-разработки
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="heading-complex">
-							<div class="heading-complex__left">
-								<a href="./" class="btn btn--primary">
-									<span>Расскажите о вашем проекте</span>
-								</a>
-							</div>
-							<p>
-								Современный и эффективный сайт – это просто: озвучьте задачу, и мы сами<br>
-								предложим лучшие идеи её реализации
-							</p>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-guarantees section">
-					<img loading="lazy" src="img/bg3.webp" alt="" class="block-guarantees__bg1">
-					<div class="container">
-						<div class="block-guarantees__body">
-							<div class="block-guarantees__image">
-								<img loading="lazy" src="img/image3.webp" alt="">
-							</div>
-							<div class="block-guarantees__descr">
-								<h2 class="title2 title2--white">ГАРАНТИИ, КОТОРЫЕ ВЫ ПОЛУЧАЕТЕ</h2>
-								<ul>
-									<li>
-										<img loading="lazy" src="img/icon/check1.svg" alt="">
-										<span>Можем работать по договору, ИП.</span>
-									</li>
-									<li>
-										<img loading="lazy" src="img/icon/check1.svg" alt="">
-										<span>100% передача всех прав и доступов</span>
-									</li>
-									<li>
-										<img loading="lazy" src="img/icon/check1.svg" alt="">
-										<span>60 дней бесплатной поддержки после закрытия проекта</span>
-									</li>
-									<li>
-										<img loading="lazy" src="img/icon/check1.svg" alt="">
-										<span>Любой перерасход от бюджета компенсируем за свой счёт</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="block-forms section">
-					<div class="container">
-						<div class="block-forms__content">
-							<div class="block-forms__body">
-								<div class="heading-complex">
-									<div class="heading-complex__left">
-										<h2 class="title2">
-											ОСТАЛИСЬ
-											ВОПРОСЫ?
-										</h2>
-									</div>
-									<p>
-										Свяжитесь с нами прямо сейчас и получите бесплатную
-										консультацию ведущего эксперта MIRIDEA
-									</p>
-								</div>
-								<form action="#" class="block-forms__form">
-									<div class="block-forms__inputs">
-										<div class="block-forms__input">
-											<input data-required autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input">
+										<div class="block-quiz__slide swiper-slide">
+											<div class="block-quiz__item">
+												<div class="block-quiz__title">Какой по мощности трактор необходим?</div>
+												<div class="block-quiz__answers">
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															24 - 30 л.с
+															<span>от 700 000 ₽</span>
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															35 - 60 л.с.
+															<span>от 1 350 000 ₽</span>
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															75 - 100 л.с.
+															<span>от 2 000 000 ₽</span>
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															130 л.с. и более
+															<Span>от 4 600 000 ₽</Span>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
-										<div class="block-forms__input">
-											<input data-required autocomplete="off" type="text" name="form[]" placeholder="Ваш телефон" class="input telephone">
+										<div class="block-quiz__slide swiper-slide">
+											<div class="block-quiz__item">
+												<div class="block-quiz__title">Где вы планируете использовать трактор?</div>
+												<div class="block-quiz__answers">
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															Буду использовать трактор только на участке
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															Буду передвигаться по дорогам общего пользования
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
-										<div class="block-forms__input">
-											<textarea class="input textarea" placeholder="Опишите задачу"></textarea>
+										<div class="block-quiz__slide swiper-slide">
+											<div class="block-quiz__item">
+												<div class="block-quiz__title">На каких условиях планируете покупку
+													трактора?</div>
+												<div class="block-quiz__answers">
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															Прямая оплата (физлицо)
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															Прямая оплата (юрлицо)
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															Покупка в лизинг (для юрлиц)
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															У меня грант для КФХ
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="block-quiz__slide swiper-slide">
+											<div class="block-quiz__item">
+												<div class="block-quiz__title">Требуется ли навесное оборудование к
+													трактору?</div>
+												<div class="block-quiz__answers">
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															Да, навесное требуется
+														</div>
+													</div>
+													<div class="block-quiz__image">
+														<img src="img/image1.webp" alt="">
+														<div class="block-quiz__radio"></div>
+														<div class="block-quiz__text">
+															Нет, навесное не требуется
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="block-quiz__slide swiper-slide">
+											<div class="block-quiz-last">
+												<div class="block-quiz-last__left">
+													<div class="block-quiz__title">Благодарим за ваши ответы!</div>
+													<p>
+														Ваши выбранные параметры для подбора трактора:
+													</p>
+													<div class="block-quiz-last__options">
+														<div class="block-quiz-last__option">
+															<img src="img/image1.webp" alt="">
+															<div class="block-quiz-last__text">
+																Садовые работы
+															</div>
+														</div>
+														<div class="block-quiz-last__option">
+															<img src="img/image1.webp" alt="">
+															<div class="block-quiz-last__text"></div>
+														</div>
+														<div class="block-quiz-last__option">
+															<img src="img/image1.webp" alt="">
+															<div class="block-quiz-last__text"></div>
+														</div>
+														<div class="block-quiz-last__option">
+															<img src="img/image1.webp" alt="">
+															<div class="block-quiz-last__text"></div>
+														</div>
+														<div class="block-quiz-last__option">
+															<img src="img/image1.webp" alt="">
+															<div class="block-quiz-last__text"></div>
+														</div>
+													</div>
+												</div>
+												<div class="block-quiz-last__right">
+													<div class="block-quiz__title">Для получения персональной подборки
+														заполните форму </div>
+													<div class="block-quiz-timer">
+														<div class="block-quiz-timer__icon">
+															<img src="img/quiz-timer-icon.webp" loading="lazy" alt="">
+														</div>
+														<div class="block-quiz-timer__text">
+															Оставьте контакты в течение 5 минут и
+															<span>получите скидку 10 000 ₽</span>
+														</div>
+														<div data-time="5:00" class="block-quiz-timer__timer">0:00</div>
+													</div>
+													<p>
+														Укажите номер, и наш эксперт отправит вам информацию на WhatsApp
+													</p>
+													<form action="#" class="form">
+														<div class="form__inputs">
+															<div class="form__input">
+																<input id="tel" data-required autocomplete="off" type="text" name="form[]" placeholder="+7 (___) ___-__-__" class="telephone">
+															</div>
+														</div>
+														<button type="submit" class="btn">
+															Получить подборку
+														</button>
+														<div class="form__text">
+															Нажимая на кнопку, вы даете согласие на обработку <a href="./">
+																персональных данных </a>
+														</div>
+													</form>
+												</div>
+											</div>
 										</div>
 									</div>
-									<button type="submit" class="block-forms__btn">ОТПРАВИТЬ</button>
-								</form>
-							</div>
-							<div class="block-forms__image">
-								<img loading="lazy" src="img/image4.webp" alt="">
+								</div>
+								<div class="block-quiz__bottom">
+									<div class="block-quiz__text2">
+										<img src="img/fire.webp" alt="" loading="lazy">
+										<span>До персональной подборки 5 шагов</span>
+									</div>
+									<div class="block-quiz__nav">
+										<div class="block-quiz__pagination"></div>
+										<div class="block-quiz__fraction">0 / 5</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="block-intro-brands">
+						<div class="block-intro-brands__slider swiper">
+							<div class="block-intro-brands__wrapper swiper-wrapper">
+								<div class="block-intro-brands__slide swiper-slide">
+									<img loading="lazy" src="img/image1.webp" alt="">
+								</div>
+								<div class="block-intro-brands__slide swiper-slide">
+									<img loading="lazy" src="img/image1.webp" alt="">
+								</div>
+								<div class="block-intro-brands__slide swiper-slide">
+									<img loading="lazy" src="img/image1.webp" alt="">
+								</div>
+								<div class="block-intro-brands__slide swiper-slide">
+									<img loading="lazy" src="img/image1.webp" alt="">
+								</div>
+								<div class="block-intro-brands__slide swiper-slide">
+									<img loading="lazy" src="img/image1.webp" alt="">
+								</div>
+							</div>
+						</div>
 				</section>
 
-				<!--Куки
-			<div class="cookies" id="cookieNotice">
-				<p>
-					Данный сайт использует <a href="./">cookies-файлы</a> для полноценной работы
-				</p>
-				<button type="button" id="acceptCookies" class="btn">СОГЛАСЕН</button>
-			</div>
-			-->
-
-				<div class="fixed-button">
-					<p>
-						ПОЛУЧИТЬ
-						ПРЕДЛОЖЕНИЕ
-					</p>
-					<img loading="lazy" src="img/icon/arrow3.svg" alt="">
+				<div class="telegram">
+					<a href="./" class="telegram__message" target="_blank">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6.191 17.6449C14.7792 13.8465 20.4964 11.3227 23.3673 10.0982C31.5384 6.62473 33.256 6.02499 34.3602 6C34.6056 6 35.1454 6.04998 35.5135 6.34985C35.8079 6.59974 35.8815 6.92459 35.9306 7.17448C35.9797 7.42437 36.0287 7.94914 35.9797 8.34897C35.538 13.0969 33.6241 24.6168 32.6426 29.9145C32.2254 32.1635 31.4157 32.9132 30.6305 32.9881C28.9128 33.1381 27.6123 31.8386 25.9683 30.7391C23.3673 29.0149 21.9196 27.9403 19.3922 26.2411C16.4723 24.292 18.3617 23.2174 20.0302 21.4682C20.4719 21.0184 28.0049 14.0215 28.1522 13.3967C28.1767 13.3218 28.1767 13.0219 28.0049 12.872C27.8332 12.722 27.5878 12.772 27.3915 12.822C27.1216 12.872 22.9993 15.6707 14.9755 21.1933C13.7977 22.018 12.7425 22.4178 11.7856 22.3928C10.7305 22.3678 8.71837 21.7931 7.19704 21.2933C5.35672 20.6935 3.88446 20.3687 4.00715 19.3191C4.08076 18.7694 4.81689 18.2196 6.191 17.6449Z" fill="white"></path>
+						</svg>
+						<div class="telegram__cube telegram__cube_first"></div>
+						<div class="telegram__cube telegram__cube_second"></div>
+						<div class="telegram__cube telegram__cube_third"></div>
+					</a>
 				</div>
 
 			</main>
 			<footer class="footer">
-				<div class="block-fixed">
-					<div class="container">
-						<div class="block-fixed__body">
-							<a href="./" download="#download" class="block-fixed__column">
-								<img src="img/icon/icon32.svg" alt="">
-								<span>Скачать бриф</span>
-							</a>
-							<a href="./" class="block-fixed__column">
-								<img src="img/icon/icon33.svg" alt="">
-								<span>Шаблоны договоров</span>
-							</a>
-							<a href="./" class="block-fixed__column">
-								<img src="img/icon/icon34.svg" alt="">
-								<span>Онлайн калькулятор</span>
-							</a>
-							<a href="./" class="block-fixed__column">
-								<img src="img/icon/icon35.svg" alt="">
-								<span>Подбор сайта (Квиз)</span>
-							</a>
-							<a href="./" class="block-fixed__column">
-								<img src="img/icon/icon36.svg" alt="">
-								<span>Схема работы</span>
-							</a>
-						</div>
-					</div>
-				</div>
 				<div class="container">
 					<div class="footer__content">
-						<div class="footer-left">
-							<a href="./" class="footer-left__logo">
-								<img loading="lazy" src="img/icon/logo1.svg" alt="">
-							</a>
-							<div class="footer-left__socials">
-								<a href="./">
-									<img loading="lazy" src="img/icon/youtube.svg" alt="">
-								</a>
-								<a href="./">
-									<img loading="lazy" src="img/icon/instagram.svg" alt="">
-								</a>
-								<a href="./">
-									<img loading="lazy" src="img/icon/facebook.svg" alt="">
-								</a>
-							</div>
-							<div class="footer-left__copy">
-								© 2006-2020 Студия Miridea
-								<br>
-								Все права защищены.
-							</div>
-						</div>
-						<div class="footer-center">
-							<div class="footer-center__column">
-								<div class="footer-center__title">О нас</div>
-								<ul>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Кто мы?</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Партнерство</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Вакансии</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Контакты</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="footer-center__column">
-								<div class="footer-center__title">Наши услуги</div>
-								<ul>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Разработка логотипа</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Разработка сайтов</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Разработка Landing page</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Разработка интернет-магазина</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Веб-программирование</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Дизайн сайтов</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Мобильные приложения</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="footer-center__column">
-								<div class="footer-center__title">Доп.услуги</div>
-								<ul>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Доработка сайтов</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Поддержка сайтов</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Продвижение сайтов</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Контекстная реклама</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Заказать хостинг</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<img loading="lazy" src="img/icon/arrow5.svg" alt="">
-											<span>Наполнение сайта</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="footer-right">
-							<a href="tel:79037771959" class="phone">
-								<img src="img/icon/phone.svg" alt="">
-								<span>+7 (903) 777-19-59</span>
-							</a>
-							<div class="footer-right__socials">
-								<a href="mailto:info@miridea.ru" class="footer-right__social">
-									<img loading="lazy" src="img/icon/email.svg" alt="">
-									<div class="footer-right__descr">
-										<p class="email">info@miridea.ru</p>
-									</div>
-								</a>
-								<a href="./" class="footer-right__social">
-									<img loading="lazy" src="img/icon/telegram.svg" alt="">
-									<div class="footer-right__descr">
-										<p>Telegram</p>
-										<span>
-											Написать нам
-										</span>
-									</div>
-								</a>
-								<a href="./" class="footer-right__social">
-									<img loading="lazy" src="img/icon/viber.svg" alt="">
-									<div class="footer-right__descr">
-										<p>Viber</p>
-										<span>
-											Написать нам
-										</span>
-									</div>
-								</a>
-							</div>
-						</div>
+						<p class="footer__text">
+							Подбор и продажа спецтехники с доставкой по всей России ООО «Центр технического оборудования»
+						</p>
+						<p class="footer__descr">
+							ОГРН: 1217700187627 / ИНН: 9703032789
+						</p>
+						<a href="./">Правовая информация</a>
 					</div>
 				</div>
 			</footer>
 		</div>
-		<div id="write-us" aria-hidden="true" class="popup">
+		<div id="call" aria-hidden="true" class="popup">
 			<div class="popup__wrapper">
 				<div class="popup__content">
 					<div data-close class="popup__close">
-						<img loading="lazy" src="img/icon/close.svg" alt="">
+						<img loading="lazy" src="img/close.svg" alt="">
 					</div>
 					<div class="popup__body">
 						<div class="popup__top">
-							<div class="popup__title">НАПИШИТЕ НАМ</div>
+							<div class="popup__title">
+								Проконсультируем по любому вашему вопросу
+							</div>
 							<p>
-								и мы поможем решить любую вашу задачу
+								Заполните контактные данные. Специалист отдела продаж свяжется с вами в течение дня,
+								проконсультирует вас и ответит на любые вопросы
 							</p>
 						</div>
 						<form action="#" class="form">
 							<div class="form__inputs">
 								<div class="form__input">
-									<input data-required autocomplete="off" type="text" name="form[]" placeholder="Имя" class="input">
+									<label for="name">Введите ваше имя</label>
+									<input id="name" data-required autocomplete="off" type="text" name="form[]" placeholder="Имя">
 								</div>
 								<div class="form__input">
-									<input data-required="email" autocomplete="off" type="text" name="form[]" placeholder="Email" class="input">
+									<label for="tel">Введите ваш номер телефона</label>
+									<input id="tel" data-required autocomplete="off" type="text" name="form[]" placeholder="+7 (___) ___-__-__" class="telephone">
 								</div>
-								<div class="form__input">
-									<input data-required autocomplete="off" type="text" name="form[]" placeholder="Телефон" class="telephone input">
-								</div>
-								<div class="form__input">
-									<select name="form[]" class="select1">
-										<option value="1" selected>Что вас интересует?</option>
-										<option value="2">Что вас интересует?2</option>
-										<option value="3">Что вас интересует?3</option>
-										<option value="4">Что вас интересует?4</option>
-									</select>
-								</div>
-								<div class="form__input">
-									<textarea placeholder="Ваш комментарий" class="input textarea"></textarea>
-								</div>
-								<div class="form__files">
-									<div class="form__file">
-										<input type="file" accept="image/*" class="">
-										<p>
-											.doc .docx .xls .xlsx .pdf .zip .rar .jpg .jpeg .png
-											<br>
-											Нажмите или перетащите файлы в эту область.
-											Не более 10 мб
-										</p>
-									</div>
-								</div>
-								<div class="previews"></div>
 							</div>
-							<div class="form__text">
-								Я согласен с политикой обработки персональных данных
-								и пользовательским соглашением
-							</div>
-							<button type="submit" class="btn btn--primary">
-								<span>НАЧАТЬ ПРОЕКТ</span>
+							<button type="submit" class="btn">
+								Отправить заявку
 							</button>
+							<div class="form__text">
+								Нажимая на кнопку, вы даете согласие на обработку <a href="./"> персональных данных </a>
+							</div>
 						</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		<script src="js/swiper-8.4.7.min.js"></script>
+		<script src="js/swiper-10.2.0.min.js"></script>
 		<script src="js/inputmask.min.js"></script>
-		<script src="js/dynamic_adapt.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 

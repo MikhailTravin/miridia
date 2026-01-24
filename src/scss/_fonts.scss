@@ -1,51 +1,58 @@
 @font-face {
-    font-family: Rubik;
-    src: url("../fonts/Rubik-Light.woff2") format("woff2");
+    font-family: Inter;
+    src: url("../fonts/Inter-Light.woff2") format("woff2");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: Rubik;
-    src: url("../fonts/Rubik-Regular.woff2") format("woff2");
+    font-family: Inter;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: Rubik;
-    src: url("../fonts/Rubik-Medium.woff2") format("woff2");
+    font-family: Inter;
+    src: url("../fonts/Inter-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: Rubik;
-    src: url("../fonts/Rubik-Bold.woff2") format("woff2");
+    font-family: Inter;
+    src: url("../fonts/Inter-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Inter;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: Ubuntu;
-    src: url("../fonts/Ubuntu-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: Ubuntu;
-    src: url("../fonts/Ubuntu-Regular.woff2") format("woff2");
-    font-weight: 400;
+    font-family: Unbounded;
+    src: url("../fonts/Unbounded-Bold.woff2") format("woff2");
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: Montserrat;
-    src: url("../fonts/Onest-Bold.woff2") format("woff2");
+    font-family: HalvarBreit;
+    src: url("../fonts/HalvarBreit-Bd.woff2") format("woff2");
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: HalvarBreit;
+    src: url("../fonts/HalvarBreit-Blk.woff2") format("woff2");
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }
